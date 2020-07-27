@@ -174,7 +174,7 @@ section{
  }
  .parallax-capa2{
     background-image: /*url("../../2020-07-18_01h54_55.png"); */url("../img/18707.jpg"); 
-    height: 100%; 
+    height: 100vh; 
   
      /*Create the parallax scrolling effect */
     background-attachment: fixed;
