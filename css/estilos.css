@@ -165,7 +165,7 @@ section{
 
 .parallax {
     background-image: url("../2020-07-18_01h54_55.png"); 
-    height: 100%; 
+    height: 100vh; 
   
      /*Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -194,9 +194,28 @@ section{
     background-size: cover;
  }
  .capa2{
-    height:100%;
-    background-color: white;
+    width: 100vw;
+    height:100vh;
+    background: #FFF/*linear-gradient(103deg, #ffffff 50%, #f2f2f2 50%)*/;
     font-size:36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .sobremi{
+     margin: auto;
+ }
+ .capa2 .acercade{
+     margin: 0 200px 150px 200px;
+     /*background: linear-gradient(103deg, #ffffff 50%, #f2f2f2 50%);*/
+     padding: 10px 30px;
+     text-align: justify;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     flex-shrink: 2;
+ }
+ .capa2 .acercade p{
+     font-size: 20px;
+     font-weight: 300;
  }
  .habilidades{
      width: 100%;
@@ -366,6 +385,24 @@ section{
     }
     .my-body{
         display: flex;
+    }
+    .parallax-capa2{
+        background: linear-gradient(103deg, #c01f1f 0%, #440c08 100%);
+    }
+    .capa2{
+        width: 100%;
+        height: 150vh;
+        overflow: hidden;
+    }
+    .capa2 .acercade{
+        margin: 0;
+        box-shadow: none;
+    }
+    .capa2 .acercade p{
+        font-size: 17px;
+    }
+    .sobremi{
+        margin: 5px auto;
     }
   }
   
