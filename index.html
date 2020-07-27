@@ -113,6 +113,31 @@
     <script src="particles.js/particles.min.js"></script>
     <script src="particles.js/demo/js/app.js"></script>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+          },
+          loop: true,
+          autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>    
+
 
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
         <script src="bootstrap-4.5.0-dist/js/jquery-3.5.1.slim.min.js"></script>
