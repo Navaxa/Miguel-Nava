@@ -227,7 +227,7 @@ section{
  }
  .capa2{
     width: 100vw;
-    height:100vh;
+    height:auto;
     background-color: #FFF;
     font-size:36px;
     display: flex;
