@@ -655,7 +655,7 @@ section{
     }
     .capa2{
         width: 100%;
-        overflow: hidden;
+        height: auto;
     }
     .contenido{
         display: flex;
