@@ -395,13 +395,13 @@ section{
 .media{
     margin: 30px auto;
 }
-.contacto li{
+.contacto li, a.LI-simple-link{
     list-style: none;
     margin: auto 30px;
     display: inline-block;
     font-size: 80px;    
 }
-.contacto li a{
+.contacto li a, a i{
     text-decoration: none;
     transform-style: none;
     color: rgba(255, 255, 255, 0.5);
