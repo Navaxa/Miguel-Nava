@@ -210,17 +210,15 @@ section{
     background-size: cover;
  }
  .parallax-capa3{
-    /*background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background: linear-gradient(-45deg, #700b0b, #E73C7E, #23A6D5, #23D5AB);
     background-size: 400% 400%;
-    animation: Gradient 15s ease infinite;*/
-    background: linear-gradient(103deg, #2193b0 0%, #6dd5ed 100%);
+    animation: Gradient 15s ease infinite;
+    /*background: linear-gradient(103deg, #2193b0 0%, #6dd5ed 100%);*/
     height: auto; 
   
      /*Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     
     display: flex;
     flex-direction: column-reverse;
@@ -415,6 +413,9 @@ section{
     height: 8vh;
     background-color: #000;
     opacity: .9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .footer h3{
     color: white;
