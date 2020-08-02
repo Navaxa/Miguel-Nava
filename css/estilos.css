@@ -333,19 +333,22 @@ section{
      text-align: center;
  }
  .portafolio{
-     margin: 0 auto;
+     /*margin: 0 auto;
      width: 100%;
-     height: 50%;
-     display: flex;
+     height: 50%;*/
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px;
+    column-gap: 2em;
  }
  .trabajo{
-     width: 20%;
+     /*width: 20%;
      height: 80%;
      margin: 0 auto;
-     display: flex;
-     flex-direction: column;
+     display: inline-block;*/
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-     
+     background-color: #fff;     
  }
  .imagen{
     width: 100%;
@@ -354,19 +357,19 @@ section{
  }
  .imagen img{
      width: 100%;
-     height: 80%;
+     height: 100%;
  }
  .nombreproyecto{
     width: 100%;
     height: 20%;
     background-color: #FFF;
+    display: flex;
     align-items: center;
     justify-content: center;
  }
  .nombreproyecto h3{
      font-family: monospace;
      text-align: center;
-     margin-top: 10px;
  }
  .overlay2{
     position: absolute;
@@ -549,7 +552,7 @@ section{
     }
     .capa2{
         width: 100%;
-        height: 120vh;
+        height: auto;
         overflow: hidden;
     }
     .contenido{
@@ -580,17 +583,12 @@ section{
         
     }
     .portafolio{
-        width: 100%;
-        margin: 10px 0;
-        flex-direction: column;
-        height: 150%;
-        overflow: hidden;
+        grid-template-rows: repeat(3, 250px);
+        row-gap: 1em;
+        padding: 10px;
     }
     .trabajo{
-        width: 100vw;
-        height: 50vh;
-        margin-right: 0;
-        margin-bottom: 20px;
+        grid-column: 1/-1;
     }
     
     .miportafolio{
