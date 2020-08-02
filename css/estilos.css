@@ -3,7 +3,7 @@ body, html{
     padding: 0;
     height: 100%;
     scroll-behavior: smooth;
-    background: red;
+    background: #FFF;
 }
 *{
     margin: 0;
@@ -84,7 +84,8 @@ section{
     margin-top: 14%;
 }
 .nombre-autor img{
-    border-radius: 50%;
+    width: 15%;
+    border-radius: 20px;
     margin-bottom: 20px;
 }
 .nombre-autor h3{
@@ -173,8 +174,19 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
  }
+ @keyframes Gradient {
+     0% {
+         background-position: 0% 50%;
+     }
+     50% {
+        background-position: 100% 50%;
+     }
+     100% {
+         background-position: 0% 50%;
+     }
+ }
  .parallax-capa2{
-    background-image: /*url("../../2020-07-18_01h54_55.png"); */url("../img/18707.jpg"); 
+    background-image: /*url("../../2020-07-18_01h54_55.png"); */url("../img/18707.jpg");
     height: 100vh; 
   
      /*Create the parallax scrolling effect */
@@ -184,6 +196,9 @@ section{
     background-size: cover;
  }
  .parallax-capa3{
+    /*background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;*/
     background: linear-gradient(103deg, #2193b0 0%, #6dd5ed 100%);
     height: 100vh; 
   
@@ -196,7 +211,7 @@ section{
  .capa2{
     width: 100vw;
     height:100vh;
-    background: #FFF/*linear-gradient(103deg, #ffffff 50%, #f2f2f2 50%)*/;
+    background-color: #FFF;
     font-size:36px;
     display: flex;
     flex-direction: column;
@@ -209,17 +224,35 @@ section{
      display: none;
  }
  .sobremi{
-     margin: auto;
+     margin: 30px auto;
+     font-family: monospace;
+
  }
- .capa2 .acercade{
-     margin: 0 200px 150px 200px;
+ .contenido{
+     width: 100%;
+     display: flex;
+    justify-content: start;
+ }
+ .acercade{
+     margin: 0 0 0 50px;
      /*background: linear-gradient(103deg, #ffffff 50%, #f2f2f2 50%);*/
      padding: 10px 30px;
      text-align: justify;
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
      flex-shrink: 2;
+     width: 50%;
  }
- .capa2 .acercade p{
+ .contenedor-img{
+     width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .contenedor-img img{
+     width: 80%;
+     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.19), 0 16px 16px 0 rgba(0, 0, 0, 0.7);
+ }
+ .acercade p{
      font-size: 20px;
      font-weight: 300;
  }
@@ -276,7 +309,7 @@ section{
 .capa3{
     width: 100vw;
     height:100vh;
-    background: #60b4df/*linear-gradient(103deg, #ffffff 50%, #f2f2f2 50%)*/;
+    background: #BCAAA4/*linear-gradient(103deg, #ffffff 50%, #f2f2f2 50%)*/;
     font-size:36px;
     display: flex;
     flex-direction: column;
@@ -306,19 +339,50 @@ section{
     height: 80%;
     background-color: cadetblue;
  }
+ .imagen img{
+     width: 100%;
+     height: 80%;
+ }
  .nombreproyecto{
     width: 100%;
     height: 20%;
-    background-color: coral;
+    background-color: #FFF;
+    align-items: center;
+    justify-content: center;
+ }
+ .nombreproyecto h3{
+     font-family: monospace;
+     text-align: center;
+     margin-top: 10px;
  }
  .overlay2{
     position: absolute;
     width: 100%;
     height: 100vh;
+    text-align: center;
 }
 .contacto{
     width: 100%;
-    height: 20vh;
+    margin: 10vh auto;
+    display: flex;
+    flex-direction: column;
+}
+.contacto h3{
+    font-weight: lighter;
+    color: white;
+    font-family: monospace;
+    font-size: 50px;
+    text-align: center;
+}
+.media{
+    margin: 100px auto;
+}
+.contacto li{
+    list-style: none;
+    margin: auto 30px;
+    display: inline-block;
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.5);
 }
 @keyframes animacion{
     from{
@@ -375,7 +439,7 @@ section{
       height: 20%;
       padding-bottom: 10px;
   }
- @media screen and (max-width: 700px) {
+ @media screen and (max-width: 800px) {
     .link{
         position: fixed;
         height: calc(100vh - 3em);
@@ -428,6 +492,9 @@ section{
     .menu{
         background-color: transparent;
     }
+    .nombre-autor img{
+        width: 50%;
+    }
     .caja{
         width: 100%;
         overflow-y: scroll;
@@ -443,18 +510,27 @@ section{
     }
     .capa2{
         width: 100%;
-        height: 150vh;
+        height: 120vh;
         overflow: hidden;
     }
+    .contenido{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .capa2 .acercade{
+        width: 100%;
         margin: 0;
         box-shadow: none;
     }
     .capa2 .acercade p{
         font-size: 17px;
     }
+    .contenedor-img{
+        width: 100%;
+        display: none;
+    }
     .sobremi{
-        margin: 5px auto;
+        margin: 20px 0 5px 0 auto;
     }
     .formenu{
         display: block;
@@ -480,6 +556,12 @@ section{
     
     .miportafolio{
         margin: 80px auto 20px;
+    }
+    .contacto{
+        margin: 12vh auto 10px;
+    }
+    .media{
+        margin: 20px 0 5px;
     }
   }
   
