@@ -324,7 +324,7 @@ section{
 .capa3{
     width: 100vw;
     height:100vh;
-    background: #BCAAA4/*linear-gradient(103deg, #ffffff 50%, #f2f2f2 50%)*/;
+    background: rgb(247, 151, 7)/*linear-gradient(103deg, #ffffff 50%, #f2f2f2 50%)*/;
     font-size:36px;
     display: flex;
     flex-direction: column;
