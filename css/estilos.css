@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 body, html{
     margin: 0;
     padding: 0;
@@ -241,7 +242,8 @@ section{
  .sobremi{
      margin: 30px auto;
      font-family: monospace;
-
+     font-size: 35px;
+     text-transform: uppercase;
  }
  .contenido{
      width: 100%;
@@ -278,8 +280,11 @@ section{
      text-align: center;
      margin-bottom: 5px;
  }
- .habilidades h3{
-     font-size: 50px;
+ .habilidades .skill h3{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
  }
  .tools{
      width: 100%;
@@ -337,6 +342,13 @@ section{
      width: 100%;
      margin: 80px auto;
      text-align: center;
+     font-family: 'Roboto', sans-serif;
+     color: #FFF;
+ }
+ .miportafolio h3{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
  }
  .portafolio{
      /*margin: 0 auto;
@@ -390,11 +402,14 @@ section{
     flex-direction: column;
 }
 .contacto h3{
-    font-weight: lighter;
+    font-weight: bold;
     color: white;
-    font-family: monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 50px;
     text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+
 }
 .media{
     margin: 30px auto;
@@ -697,6 +712,8 @@ section{
         grid-template-rows: repeat(3, 250px);
         row-gap: 1em;
         padding: 10px;
+        padding-bottom: 50px;
+
     }
     .trabajo{
         grid-column: 1/-1;
@@ -716,6 +733,9 @@ section{
     }
     .footer #firts-row{
         display: none;
+    }
+    .sobremi h2, .habilidades .skill h3,  .miportafolio h3, .contacto h3{
+        font-size: 30px;
     }
   }
   
