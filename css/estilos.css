@@ -212,10 +212,10 @@ section {
   /*background: linear-gradient(-45deg, #700b0b, #E73C7E, #23A6D5, #23D5AB);
     background-size: 400% 400%;
     animation: Gradient 15s ease infinite;*/
-  /* background: linear-gradient(103deg, #2193b0 0%, #6dd5ed 100%); */
-  /background: rgb(2,0,36);
+  background: linear-gradient(103deg, #2193b0 0%, #6dd5ed 100%);
+  /* background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,44,144,1) 0%, rgba(0,212,255,1) 97%);
-   
+   */
   height: auto;
 
   /*Create the parallax scrolling effect */
