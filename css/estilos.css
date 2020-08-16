@@ -212,10 +212,10 @@ section {
   /*background: linear-gradient(-45deg, #700b0b, #E73C7E, #23A6D5, #23D5AB);
     background-size: 400% 400%;
     animation: Gradient 15s ease infinite;*/
-  background: linear-gradient(103deg, #2193b0 0%, #6dd5ed 100%);
-  /* background: rgb(2,0,36);
+  /* background: linear-gradient(103deg, #2193b0 0%, #6dd5ed 100%); */
+  /background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,44,144,1) 0%, rgba(0,212,255,1) 97%);
-   */
+   
   height: auto;
 
   /*Create the parallax scrolling effect */
@@ -354,20 +354,20 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,44,144,1) 0%, rgba(
   /* transform: translateY(-15px); */
 
   background: #c04848; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
+  /*background: -webkit-linear-gradient(
     to right,
     #480048,
     #c04848
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
+  /*background: linear-gradient(
     to right,
     #480048,
     #c04848
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  /*  background: rgb(2,0,36);
+    background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,44,144,1) 0%, rgba(0,212,255,1) 97%);
- */
+ 
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
   color: white;
 }
