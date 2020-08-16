@@ -241,7 +241,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,44,144,1) 0%, rgba(
   display: none;
 }
 .sobremi {
-  margin: 30px auto;
+  margin: 70px auto 30px;
   font-family: monospace;
   font-size: 35px;
   text-transform: uppercase;
@@ -603,7 +603,7 @@ a i {
   vertical-align: middle;
   background-color: rgba(0, 0, 0, 0.3);
 }
-.content{
+.content {
   width: 80%;
   height: 90%;
   margin: 40px auto;
@@ -614,7 +614,6 @@ a i {
   }
   100% {
     transform: translateY(10px);
-    
   }
 }
 .content .head {
@@ -888,14 +887,14 @@ a i {
   #cv {
     float: right;
   }
-  .content{
+  .content {
     width: 90%;
   }
-  .head h2{
+  .head h2 {
     width: 80%;
     font-size: 20px;
   }
-  .head a{
+  .head a {
     width: 20%;
   }
 }
