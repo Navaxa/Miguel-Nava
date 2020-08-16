@@ -11,7 +11,7 @@
     <title>Miguel Nava</title>
 </head>
 <body>
-    <nav class="menu"> 
+    <nav class="menu" id="menu"> 
         <div class="contenedor">
             <input type="checkbox" id="check">
             <div class="nombre">
@@ -63,11 +63,24 @@
                 <p>Ahora estoy por concluir la universidad y valla que ha sido una gran travesia que me ha ayudado ha adquirir habilidades increibles
                     .
                 </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci officia aliquam velit. Itaque dolore illum delectus omnis sequi, laudantium accusantium beatae suscipit vero natus. Corrupti neque ut recusandae quas provident.</p>
                 <p>Y como era de esperarse esto no termina aquí aun tengo metas por cumplir.</p>
+                
+                <a href="#" id="cv" onclick="return openCV();"">Ver CV</a>
+                
             </div>
             <div class="contenedor-img">
                 <img src="img/vsc2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="modal-window" id="modal-window">
+        <div class="content">
+            <div class="head">
+                <h2>Curriculum Vitae</h2>
+                <a href="#" onclick="return cerrarCV();">X</a>
+            </div>
+            <div class="modal-content">
+                <iframe src="cv-2.pdf" frameborder="0"></iframe>
             </div>
         </div>
     </div>
@@ -158,7 +171,7 @@
         </div>
     </div> -->
 
-    <div class="container">
+    <div class="container" id="portafolio">
         <div class="miportafolio">
             <h3>Portafolio</h3>
         </div>
@@ -182,7 +195,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
             <!-- <a href="#">Leer más</a> -->
         </div>
-        
+
     </div>
 
     <div class="parallax-capa3" id="particles-js">
@@ -240,6 +253,24 @@
           },
         });
       </script>    
+
+      <script>
+          function cerrarCV(){
+            var modalWindow = document.getElementById("modal-window");
+            modalWindow.style.visibility = "hidden";
+
+            var menu = document.getElementById("menu");
+            menu.style.display = "block";
+          }
+
+          function openCV(){
+            var modalWindow = document.getElementById("modal-window");
+            modalWindow.style.visibility = "visible";
+
+            var menu = document.getElementById("menu");
+            menu.style.display = "none";
+          }
+      </script>
         <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
         <script src="bootstrap-4.5.0-dist/js/jquery-3.5.1.slim.min.js"></script>

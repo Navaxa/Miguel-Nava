@@ -365,9 +365,14 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,44,144,1) 0%, rgba(
     #c04848
   );*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,44,144,1) 0%, rgba(0,212,255,1) 97%);
- 
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(7, 44, 144, 1) 0%,
+    rgba(0, 212, 255, 1) 97%
+  );
+
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
   color: white;
 }
@@ -575,6 +580,69 @@ a i {
   width: 100%;
   height: 20%;
   padding-bottom: 10px;
+}
+#cv {
+  padding: 5px 10px;
+  background: #60b4df;
+  font-size: 15px;
+  color: white;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.19);
+} /*----- ventana modal ---*/
+.modal-window {
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.content{
+  width: 80%;
+  height: 90%;
+  margin: 40px auto;
+  
+}
+.content .head {
+  width: 100%;
+  height: 10%;
+  background: #34495e;
+  display: flex;
+  flex-wrap: wrap;
+}
+.head h2 {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.head a {
+  width: 5%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+.head a:hover {
+  color: white;
+}
+.content .modal-content {
+  width: 100%;
+  height: 90%;
+}
+.content .modal-content iframe {
+  width: 100%;
+  height: 100%;
 }
 /* --- media query maxima -- */
 @media screen and (max-width: 1200px) {
@@ -807,5 +875,18 @@ a i {
   .miportafolio h3,
   .contacto h3 {
     font-size: 30px;
+  }
+  #cv {
+    float: right;
+  }
+  .content{
+    width: 90%;
+  }
+  .head h2{
+    width: 80%;
+    font-size: 20px;
+  }
+  .head a{
+    width: 20%;
   }
 }
