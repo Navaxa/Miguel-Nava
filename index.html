@@ -65,7 +65,7 @@
                 </p>
                 <p>Y como era de esperarse esto no termina aquí aun tengo metas por cumplir.</p>
                 
-                <a href="#" id="cv" onclick="return openCV();"">Ver CV</a>
+                <a href="#sibre-mi" id="cv" onclick="return openCV();"">Ver CV</a>
                 
             </div>
             <div class="contenedor-img">
@@ -74,7 +74,7 @@
         </div>
     </div>
     <div class="modal-window" id="modal-window">
-        <div class="content">
+        <div class="content" id="content">
             <div class="head">
                 <h2>Curriculum Vitae</h2>
                 <a href="#" onclick="return cerrarCV();">X</a>
@@ -261,15 +261,43 @@
 
             var menu = document.getElementById("menu");
             menu.style.display = "block";
+
+            var modal = document.getElementById("content");
+
+            modal.style.removeProperty('animation');
+
+            enableScroll();
+
           }
 
           function openCV(){
+              
             var modalWindow = document.getElementById("modal-window");
             modalWindow.style.visibility = "visible";
 
             var menu = document.getElementById("menu");
             menu.style.display = "none";
+
+            var modal = document.getElementById("content");
+            modal.style.animation = "pdf .5s";
+            disableScroll();
+
           }
+
+          function disableScroll() { 
+    // Get the current page scroll position 
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft, 
+  
+        // if any scroll is attempted, set this to the previous value 
+        window.onscroll = function() { 
+            window.scrollTo(scrollLeft, scrollTop); 
+        }; 
+} 
+  
+function enableScroll() { 
+    window.onscroll = function() {}; 
+} 
       </script>
         <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>

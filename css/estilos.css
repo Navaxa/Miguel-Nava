@@ -414,7 +414,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,44,144,1) 0%, rgba(
   color: black;
 }
 
-/*----Ens Cards portafolio ---*/
+/*----End Cards portafolio ---*/
 
 /* .capa3 {
   width: 100vw;
@@ -589,6 +589,7 @@ a i {
   letter-spacing: 3px;
   border-radius: 5px;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.19);
+  text-decoration: none;
 } /*----- ventana modal ---*/
 .modal-window {
   visibility: hidden;
@@ -606,7 +607,15 @@ a i {
   width: 80%;
   height: 90%;
   margin: 40px auto;
-  
+}
+@keyframes pdf {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(10px);
+    
+  }
 }
 .content .head {
   width: 100%;
